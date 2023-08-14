@@ -1,0 +1,74 @@
+<div class="dark:bg-dark-primary">
+  <div class="mx-auto p-4 md:p-16 max-w-screen-xl">
+    <h2
+      class="text-4xl mb-8 md:mb-16 text-center font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white-primary"
+    >
+      Worked For
+    </h2>
+    <div class="grid lg:grid-cols-3 gap-8 px-8 lg:px-0">
+      <div
+        class="group dark:bg-dark-secondary md:px-8 px-4 py-8 md:py-16 rounded-lg shadow-xl hover:opacity-90 target:bg-red-500"
+        (click)="toogleCardSpin(i)"
+        *ngFor="let company of companies$ | async; let i = index"
+        [@rotateAnimation]="currentState[i]"
+        (@rotateAnimation.start)="toggleVisibilityOfElements()"
+        (@rotateAnimation.done)="toggleVisibility($event, i)"
+      >
+        <!-- translate-x-60 -translate-y-12 -->
+        <p
+          class="hidden top-6 -right-6 animate-wiggle px-6 rotate-45 fixed group-hover:flex bg-dark-accent text-dark-secondary rounded-xl"
+        >
+          click me
+        </p>
+        <div class="grid justify-items-center gap-y-4">
+          <div [ngStyle]="{ display: !isVisible[i] ? 'block' : 'none' }">
+            <img
+              class="h-32"
+              [src]="company.companyLogo"
+              [alt]="company.companyTitle + ' logo'"
+            />
+          </div>
+
+          <div
+            style="transform: rotateY(180deg)"
+            [ngStyle]="{ display: isVisible[i] ? 'block' : 'none' }"
+          >
+            <p>
+              I worked at
+              <span class="text-dark-accent font-bold">
+                {{ company.companyTitle }}
+              </span>
+              as Full Stack Developer the main technologie i was using at
+              <span class="text-dark-accent font-bold">
+                {{ company.companyTitle }}
+              </span>
+              were
+            </p>
+            <div class="grid grid-cols-2 gap-x-2 md:gap-x-4 mt-4">
+              <div
+                class="grid grid-flow-col"
+                *ngFor="let technologie of company.usedTechnologie"
+              >
+                <img
+                  class="h-9 w-9"
+                  [title]="technologie.technologieName"
+                  [src]="technologie.technologieImage"
+                />
+                <p>{{ technologie.technologieName }}</p>
+              </div>
+            </div>
+
+            <a
+              class="text-blue-600 font-semibold flex items-center justify-center mt-8"
+              [href]="company.companyHomepage"
+              target="_blank"
+              >Visit
+
+              <ng-icon name="heroArrowTopRightOnSquare" class="ml-2"></ng-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
