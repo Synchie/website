@@ -28,6 +28,10 @@
       {
         "technologieName": "Azure",
         "technologieImage": "./assets/programming-logos/azure.svg"
+      },
+      {
+        "technologieName": ".NET",
+        "technologieImage": "./assets/programming-logos/net-framework.svg"
       }
     ]
   },
