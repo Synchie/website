@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-header-bar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   animations: [
     trigger('fade', [
       transition(':enter', [

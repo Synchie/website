@@ -9,11 +9,12 @@ import {
   trigger,
   state,
 } from '@angular/animations';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-skill-table',
   standalone: true,
-  imports: [CommonModule, AsyncPipe, NgIconComponent],
+  imports: [CommonModule, AsyncPipe, NgIconComponent, TranslocoModule],
   templateUrl: './skill-table.component.html',
   animations: [
     trigger('rotateAnimation', [
@@ -48,8 +49,5 @@ export class SkillTableComponent {
   toggleVisibility(event: any, index: number) {
     if (event.fromState === 'void') return;
     this.isVisible[index] = !this.isVisible[index];
-  }
-  toggleVisibilityOfElements() {
-    // this.isVisible = true;
   }
 }

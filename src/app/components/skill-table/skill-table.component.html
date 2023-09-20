@@ -1,77 +1,83 @@
-<div class="bg-white-primary dark:bg-dark-primary">
-  <div class="mx-auto p-8 md:p-16 max-w-screen-xl">
-    <h2
-      class="text-4xl mb-8 md:mb-16 text-center font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white-primary"
-    >
-      Projekte realisiert für
-    </h2>
-    <div class="grid lg:grid-cols-3 gap-8 px-8 lg:px-0">
-      <div
-        class="group dark:bg-dark-secondary md:px-8 p-6 md:py-16 rounded-lg shadow-xl hover:opacity-90"
-        (click)="toogleCardSpin(i)"
-        *ngFor="let company of companies$ | async; let i = index"
-        [@rotateAnimation]="currentState[i]"
-        (@rotateAnimation.start)="toggleVisibilityOfElements()"
-        (@rotateAnimation.done)="toggleVisibility($event, i)"
+<ng-container *transloco="let t">
+  <div class="bg-white-primary dark:bg-dark-primary">
+    <div class="mx-auto p-8 md:p-16 max-w-screen-xl">
+      <h2
+        class="text-4xl mb-8 md:mb-16 text-center font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white-primary"
       >
-        <!-- translate-x-60 -translate-y-12 -->
-        <p
-          class="hidden top-6 -right-6 animate-wiggle px-6 rotate-45 fixed group-hover:flex bg-dark-accent text-dark-secondary rounded-xl"
+        {{ t("skill-section.projects") }}
+      </h2>
+      <div class="grid lg:grid-cols-3 gap-8 px-8 lg:px-0">
+        <div
+          class="group dark:bg-dark-secondary md:px-8 p-6 md:py-16 rounded-lg shadow-xl hover:opacity-90"
+          (click)="toogleCardSpin(i)"
+          *ngFor="let company of companies$ | async; let i = index"
+          [@rotateAnimation]="currentState[i]"
+          (@rotateAnimation.done)="toggleVisibility($event, i)"
         >
-          click me
-        </p>
-        <div class="grid justify-items-center gap-y-4 h-full items-center">
-          <div [ngStyle]="{ display: !isVisible[i] ? 'block' : 'none' }">
-            <img
-              class="h-32"
-              [src]="company.companyLogo"
-              [alt]="company.companyTitle + ' logo'"
-            />
-          </div>
-
-          <div
-            style="transform: rotateY(180deg)"
-            [ngStyle]="{ display: isVisible[i] ? 'block' : 'none' }"
+          <!-- translate-x-60 -translate-y-12 -->
+          <p
+            class="hidden top-6 -right-6 animate-wiggle px-6 rotate-45 fixed group-hover:flex bg-dark-accent text-dark-secondary rounded-xl"
           >
-            <p class="mb-6 md:mb-12">
-              I worked at
-              <span class="text-dark-accent font-bold">
-                {{ company.companyTitle }}
-              </span>
-              as Full Stack Developer the main technologie i was using at
-              <span class="text-dark-accent font-bold">
-                {{ company.companyTitle }}
-              </span>
-              were
-            </p>
-            <div class="grid justify-center md:grid-cols-2 gap-x-2 md:gap-x-4">
-              <p class="col-span-full justify-self-center mb-4">
-                Used Technologies
-              </p>
-              <div
-                class="grid grid-flow-col items-center auto-cols-max gap-x-4 w-full"
-                *ngFor="let technologie of company.usedTechnologie"
-              >
-                <img
-                  class="h-9 w-9"
-                  [title]="technologie.technologieName"
-                  [src]="technologie.technologieImage"
-                />
-                <p>{{ technologie.technologieName }}</p>
-              </div>
+            {{ t("skill-section.clickMe") }}
+          </p>
+          <div class="grid justify-items-center gap-y-4 h-full items-center">
+            <div [ngStyle]="{ display: !isVisible[i] ? 'block' : 'none' }">
+              <img
+                class="h-32"
+                [src]="company.companyLogo"
+                [alt]="company.companyTitle + ' logo'"
+              />
             </div>
 
-            <a
-              class="text-blue-600 font-semibold flex items-center justify-center mt-8"
-              [href]="company.companyHomepage"
-              target="_blank"
-              >Visit
+            <div
+              style="transform: rotateY(180deg)"
+              [ngStyle]="{ display: isVisible[i] ? 'block' : 'none' }"
+            >
+              <p class="mb-6 md:mb-12">
+                {{
+                  t("skill-section.workedFor", {
+                    company: company.companyTitle
+                  })
+                }}
 
-              <ng-icon name="heroArrowTopRightOnSquare" class="ml-2"></ng-icon>
-            </a>
+                <span class="text-dark-accent font-bold">
+                  {{ company.companyTitle }}
+                </span>
+                {{ t("skill-section.usedTechnologiesSequel") }}
+              </p>
+              <div
+                class="grid justify-center md:grid-cols-2 gap-x-2 md:gap-x-4"
+              >
+                <div
+                  class="grid grid-flow-col items-center auto-cols-max gap-x-4 w-full"
+                  *ngFor="let technologie of company.usedTechnologie"
+                >
+                  <img
+                    class="h-9 w-9"
+                    [title]="technologie.technologieName"
+                    [src]="technologie.technologieImage"
+                  />
+                  <p>{{ technologie.technologieName }}</p>
+                </div>
+              </div>
+
+              <a
+                class="text-blue-600 font-semibold flex items-center justify-center mt-8"
+                [href]="company.companyHomepage"
+                target="_blank"
+              >
+                {{
+                  t("skill-section.visit", { company: company.companyTitle })
+                }}
+                <ng-icon
+                  name="heroArrowTopRightOnSquare"
+                  class="ml-2"
+                ></ng-icon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</ng-container>
