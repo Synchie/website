@@ -22,7 +22,7 @@
         "technologieImage": "./assets/programming-logos/sass.svg"
       },
       {
-        "technologieName": "TailWind",
+        "technologieName": "Tailwind CSS",
         "technologieImage": "./assets/programming-logos/tailwind-css.svg"
       },
       {
@@ -64,6 +64,10 @@
       {
         "technologieName": ".NET",
         "technologieImage": "./assets/programming-logos/net-framework.svg"
+      },
+      {
+        "technologieName": "Oracle",
+        "technologieImage": "./assets/programming-logos/oracle.svg"
       }
     ]
   },
@@ -89,12 +93,16 @@
         "technologieImage": "./assets/programming-logos/sass.svg"
       },
       {
-        "technologieName": "Azure",
-        "technologieImage": "./assets/programming-logos/azure.svg"
+        "technologieName": "Gitlab",
+        "technologieImage": "./assets/programming-logos/gitlab.svg"
       },
       {
         "technologieName": ".NET",
         "technologieImage": "./assets/programming-logos/net-framework.svg"
+      },
+      {
+        "technologieName": "MSSQL",
+        "technologieImage": "./assets/programming-logos/mssql.svg"
       }
     ]
   }
