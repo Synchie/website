@@ -20,5 +20,9 @@
   },
   "cta": {
     "getInContact": "Get in touch with me"
+  },
+  "availability": {
+    "workload": "I am currently only available part-time, for a total of eight hours per week.",
+    "availability": "Availability"
   }
 }

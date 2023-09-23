@@ -4,6 +4,10 @@
     "expierence": "Erfahrung",
     "contact": "Kontakt"
   },
+  "availability": {
+    "availability": "Verfügbarkeit",
+    "workload": "Derzeit stehe ich nur in Teilzeit zur Verfügung, für insgesamt acht Stunden pro Woche."
+  },
   "profile-section": {
     "whoAmI": "Wer bin ich?",
     "myGoal": "Mein Ziel ist es, Sie in jeder Phase des Projekts zu unterstützen",
@@ -16,7 +20,7 @@
     "workedFor": "Ich habe als Full Stack Entwickler für {{company}} gearbeitet. Bei ",
     "usedTechnologies": "Benutzte Technologien",
     "visit": "Bei {{company}} vorbeischauen",
-    "usedTechnologiesSequel": "haben wir verschiedenste Technologien verwendet haben, unter anderem..."
+    "usedTechnologiesSequel": "haben wir verschiedenste Technologien verwendet, unter anderem..."
   },
   "cta": {
     "getInContact": "Nehmen Sie Kontakt mit mir auf"
