@@ -7,10 +7,6 @@ export class TranslocoHttpLoader implements TranslocoLoader {
   private http = inject(HttpClient);
 
   getTranslation(lang: string) {
-    let translationPath = !isDevMode()
-      ? `wesbite/assets/i18n/${lang}.json`
-      : `/assets/i18n/${lang}.json`;
-
-    return this.http.get<Translation>(translationPath);
+    return this.http.get<Translation>(`/assets/i18n/${lang}.json`);
   }
 }
