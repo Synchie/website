@@ -1,0 +1,28 @@
+{
+  "header": {
+    "aboutMe": "About me",
+    "expierence": "Expierence",
+    "contact": "Contact"
+  },
+  "profile-section": {
+    "whoAmI": "Who am I?",
+    "myGoal": "My goal is to support you in every phase of the project",
+    "myGoalAccent": "from planning and design to development and implementation",
+    "myGoalEnd": "I am able to develop complex web applications and can also help you integrate with 3rd party tools and services."
+  },
+  "skill-section": {
+    "projects": "Projects realized for",
+    "clickMe": "click me",
+    "usedTechnologies": "Used Technologies",
+    "workedFor": "I worked as a full stack developer for {{company}}. \nAt",
+    "visit": "Visit {{company}}",
+    "usedTechnologiesSequel": "We have used a variety of technologies including..."
+  },
+  "cta": {
+    "getInContact": "Get in touch with me"
+  },
+  "availability": {
+    "workload": "I am currently only available part-time, for a total of eight hours per week.",
+    "availability": "Availability"
+  }
+}

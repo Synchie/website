@@ -1,0 +1,109 @@
+[
+  {
+    "companyTitle": "ZEISS",
+    "companyHomepage": "https://www.zeiss.com/corporate/en/home.html",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Zeiss_logo.svg",
+    "companySummary": "Die Carl Zeiss AG ist ein Unternehmen der feinmechanisch-optischen Industrie. Laut Konzernwebsite werden 80 Prozent aller Mikrochips weltweit mit ZEISS Optiken hergestellt. Die Carl Zeiss Vision International GmbH mit Hauptsitz in Aalen ist ein 100-prozentiges Tochterunternehmen der Carl Zeiss AG und bildet deren Unternehmensbereich Vision Care. Das Unternehmen produziert insbesondere Brillengläser sowie Instrumente zur Bestimmung der Sehleistung (Refraktion) und zur Brillenanpassung.",
+    "usedTechnologie": [
+      {
+        "technologieName": "Angular",
+        "technologieImage": "./assets/programming-logos/angular.svg"
+      },
+      {
+        "technologieName": "TypeScript",
+        "technologieImage": "./assets/programming-logos/typescript.svg"
+      },
+      {
+        "technologieName": "HTML5",
+        "technologieImage": "./assets/programming-logos/html.svg"
+      },
+      {
+        "technologieName": "SCSS",
+        "technologieImage": "./assets/programming-logos/sass.svg"
+      },
+      {
+        "technologieName": "Tailwind CSS",
+        "technologieImage": "./assets/programming-logos/tailwind-css.svg"
+      },
+      {
+        "technologieName": "Azure",
+        "technologieImage": "./assets/programming-logos/azure.svg"
+      },
+      {
+        "technologieName": ".NET",
+        "technologieImage": "./assets/programming-logos/net-framework.svg"
+      }
+    ]
+  },
+  {
+    "companyTitle": "Marc Cain",
+    "companyHomepage": "https://www.marc-cain.com/",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Marc_Cain_Logo_2020.svg",
+    "companySummary": "Die Marc Cain GmbH ist ein 1973 gegründetes deutsches Modeunternehmen mit Sitz in Bodelshausen. nfangs produzierte Marc Cain nur Strickwaren, später wurde ein Vollsortiment aufgebaut. Ein neues Logistikzentrum ist seit Frühjahr 2015 in Betrieb. Im Bereich Strick hat Marc Cain seinen Ursprung. Dieser zählt bis heute zu den Kernkompetenzen.",
+    "usedTechnologie": [
+      {
+        "technologieName": "Angular",
+        "technologieImage": "./assets/programming-logos/angular.svg"
+      },
+      {
+        "technologieName": "TypeScript",
+        "technologieImage": "./assets/programming-logos/typescript.svg"
+      },
+      {
+        "technologieName": "HTML5",
+        "technologieImage": "./assets/programming-logos/html.svg"
+      },
+      {
+        "technologieName": "SCSS",
+        "technologieImage": "./assets/programming-logos/sass.svg"
+      },
+      {
+        "technologieName": "Azure",
+        "technologieImage": "./assets/programming-logos/azure.svg"
+      },
+      {
+        "technologieName": ".NET",
+        "technologieImage": "./assets/programming-logos/net-framework.svg"
+      },
+      {
+        "technologieName": "Oracle",
+        "technologieImage": "./assets/programming-logos/oracle.svg"
+      }
+    ]
+  },
+  {
+    "companyTitle": "KEMMLIT",
+    "companyHomepage": "https://www.kemmlit.de/",
+    "companyLogo": "https://www.kemmlit.de/fileadmin/templates/img/kemmlit_logo.svg",
+    "usedTechnologie": [
+      {
+        "technologieName": "Angular",
+        "technologieImage": "./assets/programming-logos/angular.svg"
+      },
+      {
+        "technologieName": "TypeScript",
+        "technologieImage": "./assets/programming-logos/typescript.svg"
+      },
+      {
+        "technologieName": "HTML5",
+        "technologieImage": "./assets/programming-logos/html.svg"
+      },
+      {
+        "technologieName": "SCSS",
+        "technologieImage": "./assets/programming-logos/sass.svg"
+      },
+      {
+        "technologieName": "Gitlab",
+        "technologieImage": "./assets/programming-logos/gitlab.svg"
+      },
+      {
+        "technologieName": ".NET",
+        "technologieImage": "./assets/programming-logos/net-framework.svg"
+      },
+      {
+        "technologieName": "MSSQL",
+        "technologieImage": "./assets/programming-logos/mssql.svg"
+      }
+    ]
+  }
+]
