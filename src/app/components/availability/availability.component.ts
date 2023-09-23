@@ -26,8 +26,6 @@ export class AvailabilityComponent implements AfterViewInit {
   drawOnCanvas() {
     const canvas = this.canvas?.nativeElement;
     const ctx = canvas?.getContext('2d');
-    console.log(canvas!.width);
-    console.log(canvas!.title);
 
     this.fillReact('red', 0, canvas!.height, canvas!.width, ctx);
     this.fillReact('green', 250, canvas!.height, canvas!.width, ctx);
