@@ -1,22 +1,14 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  Renderer2,
-  ViewChild,
-} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
-    selector: 'app-availability',
-    imports: [CommonModule, TranslocoModule],
-    templateUrl: './availability.component.html'
+  selector: 'app-availability',
+  imports: [CommonModule, TranslocoModule],
+  templateUrl: './availability.component.html',
 })
 export class AvailabilityComponent implements AfterViewInit {
   @ViewChild('canvas') canvas?: ElementRef<HTMLCanvasElement>;
-
-  constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit(): void {
     this.drawOnCanvas();
