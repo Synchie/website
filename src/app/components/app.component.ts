@@ -8,19 +8,18 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { AvailabilityComponent } from './availability/availability.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: true,
-  imports: [
-    NgSwitch,
-    NgSwitchDefault,
-    NgSwitchCase,
-    RouterOutlet,
-    HeaderBarComponent,
-    ProfileSectionComponent,
-    SkillTableComponent,
-    FooterBarComponent,
-    AvailabilityComponent,
-  ],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    imports: [
+        NgSwitch,
+        NgSwitchDefault,
+        NgSwitchCase,
+        RouterOutlet,
+        HeaderBarComponent,
+        ProfileSectionComponent,
+        SkillTableComponent,
+        FooterBarComponent,
+        AvailabilityComponent,
+    ]
 })
 export class AppComponent {}

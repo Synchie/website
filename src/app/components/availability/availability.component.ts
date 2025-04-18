@@ -9,10 +9,9 @@ import { CommonModule } from '@angular/common';
 import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
-  selector: 'app-availability',
-  standalone: true,
-  imports: [CommonModule, TranslocoModule],
-  templateUrl: './availability.component.html',
+    selector: 'app-availability',
+    imports: [CommonModule, TranslocoModule],
+    templateUrl: './availability.component.html'
 })
 export class AvailabilityComponent implements AfterViewInit {
   @ViewChild('canvas') canvas?: ElementRef<HTMLCanvasElement>;

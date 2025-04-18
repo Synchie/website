@@ -12,27 +12,20 @@ import {
 import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
-  selector: 'app-skill-table',
-  standalone: true,
-  imports: [CommonModule, AsyncPipe, NgIconComponent, TranslocoModule],
-  templateUrl: './skill-table.component.html',
-  animations: [
-    trigger('rotateAnimation', [
-      state(
-        'start',
-        style({
-          transform: 'rotateY(0deg)',
-        })
-      ),
-      state(
-        'end',
-        style({
-          transform: 'rotateY(180deg)',
-        })
-      ),
-      transition('start <=> end', animate('750ms ease-in-out')),
-    ]),
-  ],
+    selector: 'app-skill-table',
+    imports: [CommonModule, AsyncPipe, NgIconComponent, TranslocoModule],
+    templateUrl: './skill-table.component.html',
+    animations: [
+        trigger('rotateAnimation', [
+            state('start', style({
+                transform: 'rotateY(0deg)',
+            })),
+            state('end', style({
+                transform: 'rotateY(180deg)',
+            })),
+            transition('start <=> end', animate('750ms ease-in-out')),
+        ]),
+    ]
 })
 export class SkillTableComponent {
   public companies$ = this.service.getCompanyData();
