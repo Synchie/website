@@ -2,7 +2,7 @@ import { importProvidersFrom, isDevMode } from '@angular/core';
 import { AppComponent } from './app/components/app.component';
 import { AppRoutingModule } from './app/app-routing.module';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
-import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { heroArrowTopRightOnSquare } from '@ng-icons/heroicons/outline';
 import { provideIcons } from '@ng-icons/core';
 import { provideAnimations } from '@angular/platform-browser/animations';
@@ -11,7 +11,7 @@ import { getBrowserLang, provideTransloco } from '@ngneat/transloco';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    importProvidersFrom(BrowserModule, AppRoutingModule, HttpClientModule),
+    importProvidersFrom(BrowserModule, AppRoutingModule),
     provideIcons({ heroArrowTopRightOnSquare }),
     provideAnimations(),
     provideHttpClient(),
