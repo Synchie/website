@@ -40,7 +40,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: github-pages
-                  path: /home/runner/work/_temp/artifact.tar
+                  path: /home/runner/work/website/website/docs
 
     deploy:
         environment:
