@@ -1,0 +1,29 @@
+<p-accordion-panel [value]="$value()" class="!border-0">
+    <p-accordion-header class="!border-2 !border-[#191d22]">
+        <div class="flex flex-1 gap-4">
+            <p-avatar
+                class="bg-white"
+                [styleClass]="$imageBackgroundColor()"
+                [image]="$image()"
+                shape="square"
+            />
+            <span> {{ $headline() }}</span>
+        </div>
+    </p-accordion-header>
+
+    <p-accordion-content
+        class="!bg-[#121418] rounded-br-lg rounded-bl-lg !border-2 !border-[#191d22]"
+    >
+        <p class="m-0 pt-[1.125rem]">
+            {{ $description() }}
+        </p>
+        <div class="flex gap-2 mt-6 overflow-auto flex-wrap">
+            @for (technologies of $usedTech(); track $index) {
+                <p-chip
+                    styleClass="!bg-[#2e373e] !rounded-lg"
+                    [label]="technologies.technologieName"
+                />
+            }
+        </div>
+    </p-accordion-content>
+</p-accordion-panel>

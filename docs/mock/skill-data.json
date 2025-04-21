@@ -1,0 +1,130 @@
+[
+    {
+        "companyTitle": "ZEISS",
+        "sort": 1,
+        "companyHomepage": "https://www.zeiss.com/corporate/en/home.html",
+        "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Zeiss_logo.svg",
+        "companySummary": "Die Carl Zeiss AG ist ein Unternehmen der feinmechanisch-optischen Industrie. Laut Konzernwebsite werden 80 Prozent aller Mikrochips weltweit mit ZEISS Optiken hergestellt. Die Carl Zeiss Vision International GmbH mit Hauptsitz in Aalen ist ein 100-prozentiges Tochterunternehmen der Carl Zeiss AG und bildet deren Unternehmensbereich Vision Care. Das Unternehmen produziert insbesondere Brillengläser sowie Instrumente zur Bestimmung der Sehleistung (Refraktion) und zur Brillenanpassung.",
+        "usedTechnologie": [
+            {
+                "technologieName": "Angular",
+                "technologieImage": "./assets/programming-logos/angular.svg"
+            },
+            {
+                "technologieName": "TypeScript",
+                "technologieImage": "./assets/programming-logos/typescript.svg"
+            },
+            {
+                "technologieName": "HTML5",
+                "technologieImage": "./assets/programming-logos/html.svg"
+            },
+            {
+                "technologieName": "SCSS",
+                "technologieImage": "./assets/programming-logos/sass.svg"
+            },
+            {
+                "technologieName": "Tailwind CSS",
+                "technologieImage": "./assets/programming-logos/tailwind-css.svg"
+            },
+            {
+                "technologieName": "Azure",
+                "technologieImage": "./assets/programming-logos/azure.svg"
+            },
+            {
+                "technologieName": ".NET",
+                "technologieImage": "./assets/programming-logos/net-framework.svg"
+            }
+        ]
+    },
+    {
+        "companyTitle": "Marc Cain",
+        "sort": 3,
+        "companyHomepage": "https://www.marc-cain.com/",
+        "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Marc_Cain_Logo_2020.svg",
+        "companySummary": "Die Marc Cain GmbH ist ein 1973 gegründetes deutsches Modeunternehmen mit Sitz in Bodelshausen. nfangs produzierte Marc Cain nur Strickwaren, später wurde ein Vollsortiment aufgebaut. Ein neues Logistikzentrum ist seit Frühjahr 2015 in Betrieb. Im Bereich Strick hat Marc Cain seinen Ursprung. Dieser zählt bis heute zu den Kernkompetenzen.",
+        "usedTechnologie": [
+            {
+                "technologieName": "Angular",
+                "technologieImage": "./assets/programming-logos/angular.svg"
+            },
+            {
+                "technologieName": "TypeScript",
+                "technologieImage": "./assets/programming-logos/typescript.svg"
+            },
+            {
+                "technologieName": "HTML5",
+                "technologieImage": "./assets/programming-logos/html.svg"
+            },
+            {
+                "technologieName": "SCSS",
+                "technologieImage": "./assets/programming-logos/sass.svg"
+            },
+            {
+                "technologieName": "Azure",
+                "technologieImage": "./assets/programming-logos/azure.svg"
+            },
+            {
+                "technologieName": ".NET",
+                "technologieImage": "./assets/programming-logos/net-framework.svg"
+            },
+            {
+                "technologieName": "Oracle",
+                "technologieImage": "./assets/programming-logos/oracle.svg"
+            }
+        ]
+    },
+    {
+        "companyTitle": "KEMMLIT",
+        "sort": 4,
+        "companyHomepage": "https://www.kemmlit.de/",
+        "companyLogo": "https://www.kemmlit.de/fileadmin/templates/img/kemmlit_logo.svg",
+        "companySummary": "KEMMLIT Bauelemente GmbH ist ein führendes Unternehmen im Bereich der sanitären Objektausstattung mit Sitz in Dußlingen, Baden-Württemberg. Seit 1967 entwickelt und produziert KEMMLIT maßgeschneiderte Lösungen für öffentliche und gewerbliche Sanitärbereiche – von WC-Trennwänden über Spinde und Schließfächer bis hin zu Reinraum-Möbeln.",
+        "usedTechnologie": [
+            {
+                "technologieName": "Angular",
+                "technologieImage": "./assets/programming-logos/angular.svg"
+            },
+            {
+                "technologieName": "TypeScript",
+                "technologieImage": "./assets/programming-logos/typescript.svg"
+            },
+            {
+                "technologieName": "HTML5",
+                "technologieImage": "./assets/programming-logos/html.svg"
+            },
+            {
+                "technologieName": "SCSS",
+                "technologieImage": "./assets/programming-logos/sass.svg"
+            },
+            {
+                "technologieName": "Gitlab",
+                "technologieImage": "./assets/programming-logos/gitlab.svg"
+            },
+            {
+                "technologieName": ".NET",
+                "technologieImage": "./assets/programming-logos/net-framework.svg"
+            },
+            {
+                "technologieName": "MSSQL",
+                "technologieImage": "./assets/programming-logos/mssql.svg"
+            }
+        ]
+    },
+    {
+        "companyTitle": "Erfrischerling",
+        "sort": 2,
+        "companyHomepage": "https://www.erfrischerling.de/",
+        "companyLogo": "https://static.wixstatic.com/media/95af0e_278ba342c64d4736b4ad31c1e4db3bb6~mv2.png/v1/fill/w_222,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Erfrischerling_Logo_quer_HGweiss.png",
+        "companySummary": "Erfrischerling GmbH & Co. KG ist ein junges, inhabergeführtes Unternehmen aus Baden-Württemberg, das sich auf die Herstellung von hochwertigem, handgebrautem Kombucha spezialisiert hat. Mit einem Fokus auf natürliche Zutaten, traditionelle Fermentation und nachhaltige Produktionsweisen bringt Erfrischerling frischen Wind in die Welt alkoholfreier Getränke. Die Marke steht für ehrliches Handwerk, viel Liebe zum Detail und ein besonderes Geschmackserlebnis – ganz ohne künstliche Zusätze.",
+        "usedTechnologie": [
+            {
+                "technologieName": "Wix",
+                "technologieImage": "./assets/programming-logos/angular.svg"
+            },
+            {
+                "technologieName": "Javascript",
+                "technologieImage": "./assets/programming-logos/typescript.svg"
+            }
+        ]
+    }
+]

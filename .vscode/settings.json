@@ -1,0 +1,11 @@
+{
+  "i18n-ally.localesPaths": ["public/i18n"],
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}

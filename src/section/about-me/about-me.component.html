@@ -1,0 +1,13 @@
+<div class="flex justify-center flex-col gap-4">
+    <h3 class="text-2xl font-medium">Über mich</h3>
+    <p>
+        Mein Ziel ist es, Sie in jeder Phase des Projekts zu unterstützen. Ich
+        bin in der Lage, komplexe Webanwendungen zu entwickeln und kann Ihnen
+        auch bei der Integration von Drittanbieter-Tools und -Services helfen.
+    </p>
+    <div class="flex gap-2">
+        @for (skill of $skills(); track skill) {
+            <p-chip class="!bg-[#2e373e] !rounded-lg" [label]="skill" />
+        }
+    </div>
+</div>
